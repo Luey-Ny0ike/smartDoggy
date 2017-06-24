@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('train');
   this.route('admin');
   this.route('admin1');
+  this.route('dog');
 });
 
 export default Router;
