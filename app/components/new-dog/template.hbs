@@ -1,1 +1,44 @@
-{{yield}}
+{{#if addNewDog}}
+<h1>New dog</h1>
+<div class="col-md-6">
+  <form>
+    <div class="form-group">
+      <label for="name">Name</label> {{input value="name" id="name" class="form-controll"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="age">Age</label> {{input value="age" id="age" class="form-controll"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="breed">Breed</label> {{input value="breed" id="breed" class="form-controll"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="color">Color</label> {{input value="color" id="color" class="form-controll"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="nickname">Nickname</label> {{input value="nickname" id="nickname" class="form-controll"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="title">Title</label> {{input value="title" id="title" class="form-controll"}}
+    </div>
+
+
+    <div class="form-group">
+      <label for="description">Description</label> {{textarea value="description" id="description" class="form-controll"}}
+    </div>
+    <button class="btn btn-success" {{action 'saveDog1' dog}}>Save</button>
+    <button class="btn btn-primary" {{action 'dogFormHide'}}>Hide</button>
+  </form>
+</div>
+{{else}}
+  <button class="btn btn-primary"{{action 'dogFormShow'}}>New dog</button>
+  {{/if}}
