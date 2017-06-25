@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     saveDog3(params){
       var newdog = this.store.createRecord('dog', params);
       newdog.save();
-    }
+    },
+    update(dog, params) {
+      this.sendAction('update', dog, params);
+    },
   }
 });
