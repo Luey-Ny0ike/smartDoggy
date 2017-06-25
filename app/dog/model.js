@@ -7,5 +7,5 @@ breed: DS.attr(),
 color: DS.attr(),
 nickname: DS.attr(),
 title: DS.attr(),
-description: DS.attr()
+description: DS.attr(),
 });

@@ -18,12 +18,12 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyBT2qb4m3tz15glIngClbqRlrlBOIQSwxA",
-    authDomain: "smartdoggy-3317d.firebaseapp.com",
-    databaseURL: "https://smartdoggy-3317d.firebaseio.com",
-    projectId: "smartdoggy-3317d",
-    storageBucket: "smartdoggy-3317d.appspot.com",
-    messagingSenderId: "896465778117"
+      apiKey: "AIzaSyB-k_t7a8Q-TEkjinynGG3QRXrg3eRknu0",
+   authDomain: "smartdoggy-fcb86.firebaseapp.com",
+   databaseURL: "https://smartdoggy-fcb86.firebaseio.com",
+   projectId: "smartdoggy-fcb86",
+   storageBucket: "smartdoggy-fcb86.appspot.com",
+   messagingSenderId: "246041121564"
     },
 
     APP: {
