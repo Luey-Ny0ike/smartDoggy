@@ -1,1 +1,5 @@
-{{outlet}}
+<ul>
+  {{#each model as |dog|}}
+    {{admin-tile dog=dog}}
+    {{/each}}
+</ul>
