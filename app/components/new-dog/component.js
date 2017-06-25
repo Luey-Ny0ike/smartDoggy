@@ -19,7 +19,7 @@ export default Ember.Component.extend({
         nickname: this.get('nickname'),
         description: this.get('description')
       };
-      this,set('addNewDog', false);
+      this.set('addNewDog', false);
       this.sendAction('saveDog2', params)
     }
   }
