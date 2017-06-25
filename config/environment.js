@@ -17,6 +17,15 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyBT2qb4m3tz15glIngClbqRlrlBOIQSwxA",
+    authDomain: "smartdoggy-3317d.firebaseapp.com",
+    databaseURL: "https://smartdoggy-3317d.firebaseio.com",
+    projectId: "smartdoggy-3317d",
+    storageBucket: "smartdoggy-3317d.appspot.com",
+    messagingSenderId: "896465778117"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
