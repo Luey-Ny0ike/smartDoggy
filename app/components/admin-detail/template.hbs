@@ -5,3 +5,5 @@
   <p>{{model.description}}</p>
 
   <p>Recommendation: <em>this and that</em></p>
+  <button class="btn btn-danger"{{action 'delete' dog}}>Delete</button>
+  {{update-dog dog=dog update="update"}}
