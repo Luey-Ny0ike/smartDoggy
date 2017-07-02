@@ -1,4 +1,6 @@
 <h1>Available dogs</h1>
   {{dog.name}} <br>{{dog.color}} <br> {{dog.age}} <br>{{dog.image1}}
 
+  <button class="btn btn-danger"{{action 'delete' dog}}>Delete</button>
+
 {{update-dog dog=dog update="update"}}
