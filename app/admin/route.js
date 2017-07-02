@@ -17,7 +17,11 @@ export default Ember.Route.extend({
     });
     dog.save();
     this.transitionTo('admin');
-  }
-
+  },
+  delete(dog){
+    if(confirm('Msee, are you sure you want to delete this?')){
+      this.sendAction('destroyDog', dog);
+    }
+   }
   }
 });
