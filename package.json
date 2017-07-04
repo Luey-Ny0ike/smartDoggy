@@ -46,6 +46,7 @@
   },
   "private": true,
   "dependencies": {
+    "ember-cli-carousel": "^1.0.4",
     "ember-cli-sass": "^6.2.0"
   }
 }
