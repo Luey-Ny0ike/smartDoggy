@@ -1,7 +1,13 @@
 
 <li>
   Name: {{dog.name}} <br>Colour: {{dog.color}} <br> Age: {{dog.age}} <br>
-  <p><img src={{dog.image1}} alt={{dog.name}}></p>
+  <p><img class="materialboxed" src={{dog.image1}} alt={{dog.name}}></p>
 
   {{#link-to 'dog'  dog.id class= "btn btn-primary"}} See more{{/link-to}}
 </li>
+
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.materialboxed').materialbox();
+ });  
+</script>
