@@ -1,1 +1,63 @@
-{{yield}}
+{{#if updatePuppyForm}}
+  <h3>Update puppy details</h3>
+  <div class="col-md-4">
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label> {{input value=name id="name" class="form-control" placeholder=puppy.name}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="age">Age</label> {{input value=age id="age" class="form-control" placeholder=puppy.age}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="breed">Breed</label> {{input value=breed id="breed" class="form-control" placeholder=puppy.breed}}
+      </div>
+
+      <div class="form-group">
+        <label for="gender">Gender</label> {{input value=gender id="gender" class="form-control" placeholder=puppy.gender}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="image1">1st image</label> {{input value=image1 id="image1" class="form-control" placeholder=puppy.image1}}
+      </div>
+
+      <div class="form-group">
+        <label for="image2">2nd image</label> {{input value=image2 id="image2" class="form-control" placeholder=puppy.image2}}
+      </div>
+
+      <div class="form-group">
+        <label for="image3">3rd image</label> {{input value=image3 id="image3" class="form-control" placeholder=puppy.image3}}
+      </div>
+
+      <div class="form-group">
+        <label for="color">Color</label> {{input value=color id="color" class="form-control" placeholder=puppy.color}}
+      </div>
+
+      <div class="form-group">
+        <label for="nickname">Nickname</label> {{input value=nickname id="nickname" class="form-control" placeholder=puppy.nickname}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="title">Title</label> {{input value=title id="title" class="form-control" placeholder=puppy.title}}
+      </div>
+
+      <div class="form-group">
+        <label for="recomendation">Recomendation</label> {{input value=breed id="recomendation" class="form-control" placeholder=puppy.recomendation}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="description">Description</label> {{textarea value=puppy.description id="description" class="form-control" }}
+      </div>
+      <button class="btn btn-success" {{action 'update' puppy}}>Save</button>
+      <button class="btn btn-primary" {{action 'updateFormHide'}}>Hide</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-primary" {{action 'updatePuppyForm'}}>Update</button>
+{{/if}}
