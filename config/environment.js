@@ -18,18 +18,18 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyB-k_t7a8Q-TEkjinynGG3QRXrg3eRknu0",
-   authDomain: "smartdoggy-fcb86.firebaseapp.com",
-   databaseURL: "https://smartdoggy-fcb86.firebaseio.com",
-   projectId: "smartdoggy-fcb86",
-   storageBucket: "smartdoggy-fcb86.appspot.com",
-   messagingSenderId: "246041121564"
+      apiKey: "AIzaSyAXotTmEv3uslUdHOM7cYMP4_h2pXOMZq4",
+authDomain: "smartdoggy2.firebaseapp.com",
+databaseURL: "https://smartdoggy2.firebaseio.com",
+projectId: "smartdoggy2",
+storageBucket: "smartdoggy2.appspot.com",
+messagingSenderId: "149709796492"
     },
 
-      firebase: 'https://smartdoggy-fcb86.firebaseio.com/',
-      torii: {
-  sessionServiceName: 'session',
-},
+      // firebase: 'https://smartdoggy-fcb86.firebaseio.com/',
+//       torii: {
+//   sessionServiceName: 'session',
+// },
 
     APP: {
       // Here you can pass flags/options to your application instance

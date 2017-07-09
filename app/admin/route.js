@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-      return this.store.findAll('dog');
+    return Ember.RSVP.hash({
+      dogs: this.store.findAll('dog'),
+      puppies: this.store.findAll('puppy')
+    });
   },
   actions:{
     saveDog3(params){
