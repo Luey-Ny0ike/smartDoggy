@@ -8,7 +8,7 @@ export default Ember.Route.extend({
    destroyDog(dog) {
      dog.destroyRecord();
      this.transitionTo('admin');
-   }
+   },
    destroyPuppy(puppy) {
      puppy.destroyRecord();
      this.transitionTo('admin');
