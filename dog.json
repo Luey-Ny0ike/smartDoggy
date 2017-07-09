@@ -1,7 +1,29 @@
 {"dogs": [{
-
+  "name":"Smart",
+  "age":"2",
+  "breed":"japanese spitz",
+  "gender":"male",
+  "color":"white",
+  "image1":"https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?h=350&auto=compress&cs=tinysrgb",
+  "image2":"https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?h=350&auto=compress&cs=tinysrgb",
+  "image3":"https://images.pexels.com/photos/356378/pexels-photo-356378.jpeg?h=350&auto=compress&cs=tinysrgb",
+  "nickname":"Smartie",
+  "title":"Alpha dog",
+  "description":"He literaly brings life the meaning ",
+  "recomendation":"Take him if you need to proove people wrong"
   }],
 "puppys":[{
-
+  "name":"Small small",
+  "age":"5 months",
+  "breed":"spitz",
+  "gender":"female",
+  "color":"white",
+  "image1":"https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?h=350&auto=compress&cs=tinysrgb",
+  "image2":"https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?h=350&auto=compress&cs=tinysrgb",
+  "image3":"https://images.pexels.com/photos/33053/dog-young-dog-small-dog-maltese.jpg?h=350&auto=compress&cs=tinysrgb",
+  "nickname":"Double SS",
+  "title":"Fierce",
+  "description":"takes after her father smart",
+  "recomendation":"She will always surprise you"
   }]
 }
