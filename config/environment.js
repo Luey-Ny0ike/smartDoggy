@@ -26,6 +26,7 @@ module.exports = function(environment) {
    messagingSenderId: "246041121564"
     },
 
+      firebase: 'https://smartdoggy-fcb86.firebaseio.com/',
       torii: {
   sessionServiceName: 'session',
 },
