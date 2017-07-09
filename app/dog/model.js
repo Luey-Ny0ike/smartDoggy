@@ -12,5 +12,5 @@ nickname: DS.attr(),
 title: DS.attr(),
 description: DS.attr(),
 gender: DS.attr(),
-recomendation: DS,attr(),
+recomendation: DS.attr()
 });
