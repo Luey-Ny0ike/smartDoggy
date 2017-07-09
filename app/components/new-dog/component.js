@@ -18,6 +18,8 @@ export default Ember.Component.extend({
         title: this.get('title'),
         nickname: this.get('nickname'),
         description: this.get('description'),
+        gender: this.get('gender'),
+        recomendation: this.get('recomendation')
       };
       this.set('addNewDog', false);
       this.sendAction('saveDog2', params)
