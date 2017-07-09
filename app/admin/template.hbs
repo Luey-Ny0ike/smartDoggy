@@ -12,6 +12,6 @@
 <h1>Available puppies</h1>
 <ul>
   {{#each model.puppies as |puppy|}}
-  <li>{{puppy.name}} <br> {{puppy.age}} <br><img src={{puppy.image1}} alt={{pupp.name}}></li>
+  <li>{{admin-puppy-tile puppy=puppy destroyPuppy="destroyPuppy"}}</li>
   {{/each}}
 </ul>
