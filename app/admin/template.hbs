@@ -1,25 +1,36 @@
 {{outlet}}
 
 {{#if session.isAuthenticated}}
-<button name="button" {{action 'logout'}}>Logout</button>
+  <button name="button" {{action 'logout'}}>Logout</button>
   <h1>Available dogs</h1>
-<ul>
-  {{#each model.dogs as |dog|}}
-    {{admin-tile dog=dog update="update" destroyDog="destroyDog"}}
+  <ul>
+    {{#each model.dogs as |dog|}}
+      {{admin-tile dog=dog update="update" destroyDog="destroyDog"}}
     {{/each}}
-</ul>
+  </ul>
 
-{{new-dog saveDog2="saveDog3"}}
+  {{new-dog saveDog2="saveDog3"}}
 
-<h1>Available puppies</h1>
-<ul>
-  {{#each model.puppies as |puppy|}}
-  <li>{{admin-puppy-tile puppy=puppy destroyPuppy="destroyPuppy"}}</li>
-  {{/each}}
-</ul>
+  <h1>Available puppies</h1>
+  <ul>
+    {{#each model.puppies as |puppy|}}
+      <li>{{admin-puppy-tile puppy=puppy destroyPuppy="destroyPuppy"}}</li>
+    {{/each}}
+  </ul>
 
-{{new-puppy update="update" savePuppy2="savePuppy3"}}
+  {{new-puppy update="update" savePuppy2="savePuppy3"}}
 {{else}}
- <h2>Login as admin</h2>
- <button name="button" {{action 'login'}}>Login</button>
- {{/if}}
+  <h2>Login as admin</h2>
+  <div class="col-md-4">
+    <form>
+      <div class="form-group">
+        <label for="email">Email</label> {{input value=email id="email" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label> {{input value=password id="password" class="form-control"}}
+      </div>
+     </form>
+    <button name="button" {{action 'login'}}>Login</button>
+  </div>
+{{/if}}
