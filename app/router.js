@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('contact');
   this.route('train', function() {
     this.route('sit');
+    this.route('bark');
   });
   this.route('admin');
   this.route('admin1', {path: '/admin1/:dog_id'});
