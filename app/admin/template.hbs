@@ -1,7 +1,7 @@
 {{outlet}}
 
 {{#if session.isAuthenticated}}
-  <button name="button" {{action 'logout'}}>Logout</button>
+  <button name="button" class="btn"{{action 'logout'}}>Logout</button>
   <h1>Available dogs</h1>
   <ul>
     {{#each model.dogs as |dog|}}
