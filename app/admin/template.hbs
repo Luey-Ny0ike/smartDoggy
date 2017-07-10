@@ -1,5 +1,7 @@
 {{outlet}}
 
+{{#if session.isAuthenticated}}
+<button name="button" {{action 'logout'}}>Logout</button>
   <h1>Available dogs</h1>
 <ul>
   {{#each model.dogs as |dog|}}
@@ -17,3 +19,7 @@
 </ul>
 
 {{new-puppy update="update" savePuppy2="savePuppy3"}}
+{{else}}
+ <h2>Login as admin</h2>
+ <button name="button" {{action 'login'}}>Login</button>
+ {{/if}}
