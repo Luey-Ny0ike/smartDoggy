@@ -27,9 +27,9 @@ messagingSenderId: "149709796492"
     },
 
       // firebase: 'https://smartdoggy-fcb86.firebaseio.com/',
-//       torii: {
-//   sessionServiceName: 'session',
-// },
+      torii: {
+  sessionServiceName: 'session',
+},
 
     APP: {
       // Here you can pass flags/options to your application instance
