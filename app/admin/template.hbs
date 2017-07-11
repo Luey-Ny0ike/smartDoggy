@@ -21,8 +21,8 @@
   {{new-puppy update="update" savePuppy2="savePuppy3"}}
 
 <ul>
-    {{#each model.trains as |train|}}
-    <li><h1>{{train.title}}</h1> <br> <img src={{train.image1}} alt ={{train.title}}> {{train.content1}}</li>
-    <li>{{train.content2}}</li>
+    {{#each model.tricks as |trick|}}
+    <li><h1>{{trick.title}}</h1> <br> <img src={{trick.image1}} alt ={{trick.title}}> {{trick.content1}}</li>
+    <li>{{trick.content2}}</li>
   {{/each}}
   </ul>
