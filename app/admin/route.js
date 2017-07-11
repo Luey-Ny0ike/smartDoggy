@@ -5,7 +5,8 @@ firebase:Ember.inject.service(),
   model() {
     return Ember.RSVP.hash({
       dogs: this.store.findAll('dog'),
-      puppies: this.store.findAll('puppy')
+      puppies: this.store.findAll('puppy'),
+      train: this.store.findAll('train')
     });
   },
   actions:{
