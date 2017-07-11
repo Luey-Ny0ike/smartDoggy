@@ -25,5 +25,13 @@
   "title":"Fierce",
   "description":"takes after her father smart",
   "recomendation":"She will always surprise you"
-  }]
+  }],
+  "train":[{
+    "title":"HOW TO TRAIN A DOG TO SIT",
+    "content1":"How to train a dog to sit is very simple",
+    "content2":"just take a treat prefarably a",
+    "image1":"https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?h=350&auto=compress&cs=tinysrgb",
+    "image2":"https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?h=350&auto=compress&cs=tinysrgb",
+    "video":"https://youtu.be/ENcl04S6tio"
+    }]
 }
