@@ -19,6 +19,12 @@
   </ul>
 
   {{new-puppy update="update" savePuppy2="savePuppy3"}}
+
+<ul>
+    {{#each model.train as |train|}}
+    <li><h1>{{train.title}}</h1> <br> <img src={{train.image1}} alt ={{train.title}}> {{train.content1}}</li>
+  {{/each}}
+  </ul>
 {{else}}
   {{login-form}}
 {{/if}}
