@@ -17,6 +17,7 @@ Router.map(function() {
   this.route('dog', {path:'/dog/:dog_id'});
   this.route('puppy',{path:'/puppy/:puppy_id'});
   this.route('admin2',{path: '/admin2/:puppy_id'});
+  this.route('admin3');
 });
 
 export default Router;
