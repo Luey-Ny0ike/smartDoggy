@@ -6,7 +6,7 @@ firebase:Ember.inject.service(),
     return Ember.RSVP.hash({
       dogs: this.store.findAll('dog'),
       puppies: this.store.findAll('puppy'),
-      train: this.store.findAll('train')
+      trains: this.store.findAll('train')
     });
   },
   actions:{
@@ -25,8 +25,8 @@ firebase:Ember.inject.service(),
      var self = this;
      this.get('session').open('firebase', {
        provider: "password",
-       email: userdetails.email,
-       password: userdetails.password
+       email: "nyoikelewis@gmail.com",
+       password: "1234567"
      }).then(function(){
        console.log("success logging in")
      }).catch(function(error){
