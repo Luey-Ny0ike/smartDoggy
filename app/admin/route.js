@@ -20,17 +20,12 @@ firebase:Ember.inject.service(),
       this.transitionTo('admin');
    },
 
-   login(admin){
-    //  var self = this;
-     //
-    //    emails: this.get('email');
-    //    password: this.get('password')
-     //
-    //    console.log(emails);
+   logIn(userdetails){
+     var self = this;
      this.get('session').open('firebase', {
        provider: "password",
-       email: "nyoikelewis@gmail.com",
-       password: "1234567"
+       email: userdetails.email,
+       password: userdetails.password
      }).then(function(){
        console.log("success logging in")
      }).catch(function(error){
