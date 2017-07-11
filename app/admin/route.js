@@ -20,6 +20,11 @@ firebase:Ember.inject.service(),
       newpuppy.save();
       this.transitionTo('admin');
    },
+   saveTrick3(params){
+     var newtrick = this.store.createRecord('trick', params);
+     newtrick.save();
+     this.transitionTo('admin');
+   },
 
    logIn(userdetails){
      var self = this;
