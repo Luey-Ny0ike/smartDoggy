@@ -26,16 +26,17 @@ firebase:Ember.inject.service(),
      this.transitionTo('admin');
    },
 
-   logIn(userdetails){
+   logIn(user){
      var self = this;
      this.get('session').open('firebase', {
        provider: "password",
-       email: "nyoikelewis@gmail.com",
-       password: "1234567"
+       email: user.ema,
+       password: user.password
      }).then(function(){
        console.log("success logging in")
      }).catch(function(error){
        console.log("Error"+error)
+       alert('Who are you trying to hack msee??')
      });
    },
    logout(){
