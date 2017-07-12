@@ -27,14 +27,12 @@ firebase:Ember.inject.service(),
    },
 
    logIn(user){
-     var self = this;
      this.get('session').open('firebase', {
        provider: "password",
        email: user.ema,
        password: user.password
-     }).then(function(){
-       console.log("success logging in")
-     }).catch(function(error){
+     })
+     .catch(function(error){
        console.log("Error"+error)
        alert('Who are you trying to hack msee??')
      });
