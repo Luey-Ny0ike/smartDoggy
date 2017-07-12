@@ -1,6 +1,5 @@
 {{outlet}}
 
-
 {{#if session.isAuthenticated}}
   <button name="button" class="btn"{{action 'logout'}}>Logout</button>
   <h1>Available dogs</h1>
@@ -23,8 +22,6 @@
 
 <ul>
     {{#each model.tricks as |trick|}}
-    <li><h1>{{trick.title}}</h1> <br> <img src={{trick.image1}} alt ={{trick.title}}> {{trick.content1}}</li>
-    <li>{{trick.content2}}</li>
   {{trick-tile trick=trick}}
   {{/each}}
   </ul>
