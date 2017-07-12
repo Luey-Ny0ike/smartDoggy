@@ -8,13 +8,13 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('contact');
-  this.route('train');
+  this.route('train', {path: '/train/:trick_id'});
   this.route('admin');
   this.route('admin1', {path: '/admin1/:dog_id'});
   this.route('dog', {path:'/dog/:dog_id'});
   this.route('puppy',{path:'/puppy/:puppy_id'});
   this.route('admin2',{path: '/admin2/:puppy_id'});
-  this.route('admin3');
+  this.route('admin3', {path: '/admin3/:trick_id'});
   this.route('services');
 });
 
