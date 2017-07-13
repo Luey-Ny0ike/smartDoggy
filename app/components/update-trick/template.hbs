@@ -1,1 +1,49 @@
-{{yield}}
+{{#if updateTrickForm}}
+  <h3>Update trick details</h3>
+  <div class="col-md-4">
+    <form>
+      <div class="form-group">
+        <label for="title">Title</label> {{input value=title id="title" class="form-control" placeholder=trick.title}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="step1">Step 1</label> {{input value=step1 id="step1" class="form-control" placeholder=trick.step1}}
+      </div>
+
+
+      <div class="form-group">
+        <label for="step2">Step 2</label> {{textarea value=step2 id="step2" class="form-control" placeholder=trick.step2}}
+      </div>
+
+      <div class="form-group">
+        <label for="step3">Step 3</label> {{input value=trick.step3 id="step3" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="step4">Step 4</label> {{textarea value=trick.step4 id="step4" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image1">1st image</label> {{input value=image1 id="image1" class="form-control" placeholder=trick.image1}}
+      </div>
+
+      <div class="form-group">
+        <label for="image2">2nd image</label> {{input value=image2 id="image2" class="form-control" placeholder=trick.image2}}
+      </div>
+
+      <div class="form-group">
+        <label for="extratips">Extra tips</label> {{input value=extratips id="extratips" class="form-control"}}
+      </div>
+
+      <div class="form-group">
+        <label for="video">embeded video url</label> {{input value=video id="video" class="form-control" placeholder="example https://www.youtube.com/embed/UgBBitvVHAg"}}
+      </div>
+
+      <button class="btn btn-success" {{action 'update' trick}}>Save</button>
+      <button class="btn btn-primary" {{action 'updateFormHide'}}>Hide</button>
+    </form>
+  </div>
+{{else}}
+  <button class="btn btn-primary" {{action 'updateTrickForm'}}>Update</button>
+{{/if}}
