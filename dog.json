@@ -28,10 +28,13 @@
   }],
   "tricks":[{
     "title":"HOW TO TRAIN A DOG TO SIT",
-    "content1":"How to train a dog to sit is very simple",
-    "content2":"just take a treat prefarably a",
+    "step1":"How to train a dog to sit is very simple",
+    "step2":"just take a treat prefarably a",
+    "step3":"Then do this and that",
+    "step4":"Finally this and that",
     "image1":"https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?h=350&auto=compress&cs=tinysrgb",
     "image2":"https://images.pexels.com/photos/59523/pexels-photo-59523.jpeg?h=350&auto=compress&cs=tinysrgb",
-    "video":"https://youtu.be/ENcl04S6tio"
+    "extratips":"watch this thing",
+    "video":"https://youtu.be/embed/ENcl04S6tio"
     }]
 }
