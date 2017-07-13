@@ -12,11 +12,14 @@ export default Ember.Component.extend({
     saveTrick1() {
       var params = {
         title: this.get('title'),
-        content1: this.get('content1'),
-        content2: this.get('content2'),
+        step1:  this.get('step1'),
+        step2:  this.get('step2'),
+        step3:  this.get('step3'),
+        step4: this.get('step4'),
         image1: this.get('image1'),
         image2: this.get('image2'),
-        video: this.get('video'),
+        extratips: this.get('extratips'),
+        video:  this.get('video'),
       };
       this.set('addNewTrick', false);
       this.sendAction('saveTrick2', params)
