@@ -35,13 +35,15 @@
   $(document).ready(function(){
    $('.slider').slider();
  });
-    
+
   </script>
 {{outlet}}
 
 
 <ul>
+  <div class="row">
 {{#each model as |dog|}}
   {{dog-tile dog=dog}}
   {{/each}}
+</div>
 </ul>
