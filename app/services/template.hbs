@@ -1,1 +1,10 @@
 {{outlet}}
+<div class="trick">
+<h2>Learn the do's and don'ts tricks and tips to start you off with your new puppy</h2>
+<h4>Learn how to teach your puppy some basic tricks!</h4>
+<ol>
+  {{#each model as |trick|}}
+   {{user-trick-tile trick=trick}}
+  {{/each}}
+</ol>
+</div>
