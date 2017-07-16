@@ -1,10 +1,50 @@
-<h4>Name: {{dog.name}}</h4>
-<h4>Age: {{dog.age}} &nbsp; &nbsp; Breed: {{dog.breed}}</h4>
-<h4>&nbsp;&nbsp; Title: {{dog.title}}</h4>
-<h5>Description:</h5>
-  <p>{{dog.description}}</p>
+<div class="detail">
+  <div class="row">
+    <div class="col-md-6 one">
+      <br>
+      <p><img class="thumbnail" src= {{dog.image1}}></p>
+    </div>
+    <div class="col-md-6 two">
+      <h4>Name:{{dog.name}}</h4>
+      <br>
+      <h4>Age: {{dog.age}}</h4>
+      <br>
+      <h4>Gender: {{dog.gender}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 three">
+      <h4>Title:</h4>
+      <h5>{{dog.title}}</h5>
+      <br>
+      <h4>Description:</h4>
+      <h5>{{dog.description}}</h5>
+    </div>
+    <div class="col-md-6 four">
+      <p><img class="thumbnail" src= {{dog.image2}}></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 three">
+      <p><img class="thumbnail" src= {{dog.image3}}></p>
+    </div>
+    <div class="col-md-6 four">
+      <h4>Breed: {{dog.breed}}</h4>
+      <br>
+      <h4>Colour: {{dog.color}}</h4>
+      <br>
+      <h4>Price: <span id="price">{{dog.price}}</span></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <blockquote cite="http://">
+        Recomendation: {{dog.recomendation}}
+      </blockquote>
+    </div>
+  </div>
+</div>
 
-  <p>Recommendation: <em>this and that</em></p>
   <button class="btn btn-danger"{{action 'delete' dog}}>Delete</button>
 
   {{update-dog dog=dog update="update"}}
