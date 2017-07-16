@@ -1,0 +1,25 @@
+<div class="row trick">
+  <li>
+   <span class="title"><h4>{{trick.title}}</h4></span> <div class="col-md-6">
+  <br> <p><img class="thumbnail" src={{trick.image1}}></p>
+   </div>
+   <div class="col-md-6 two">
+     <table class="table table-condensed">
+     <thead>
+       <tr>
+         <th>Follow this steps</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td><img src="/assets/images/one.png" alt="1">&nbsp;{{trick.step1}}</td>
+       </tr>
+       <tr>
+         <td><img src="/assets/images/two.png" alt="2">&nbsp;{{trick.step2}}</td>
+       </tr>
+     </tbody>
+   </table>
+ </div>
+  {{#link-to 'train'  trick.id class= "btn btn-primary"}} See more{{/link-to}}
+</li>
+</div>
