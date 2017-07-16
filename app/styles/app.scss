@@ -1,124 +1,219 @@
 @import "ember-bootstrap/bootstrap";
 @import "bower_components/materialize/sass/materialize.scss";
+
 #wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
+
 #wrapper.toggled {
-    padding-left: 250px;
+  padding-left: 250px;
 }
+
 #sidebar-wrapper {
   z-index: 1000;
- position: fixed;
- left: 250px;
- width: 0;
- height: 100%;
- margin-left: -250px;
- overflow-y: auto;
- background: rgba(0, 4, 12, 0.9);
- -webkit-transition: all 0.5s ease;
- -moz-transition: all 0.5s ease;
- -o-transition: all 0.5s ease;
- transition: all 0.5s ease;
+  position: fixed;
+  left: 250px;
+  width: 0;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: rgba(0, 4, 12, 0.9);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
+
 #wrapper.toggled #sidebar-wrapper {
-   width: 250px;
+  width: 250px;
 }
 
 #page-content-wrapper {
-   width: 100%;
-   position: absolute;
-   padding: 15px;
+  width: 100%;
+  position: absolute;
+  padding: 15px;
 }
 
 #wrapper.toggled #page-content-wrapper {
-   position: absolute;
-   margin-right: -250px;
+  position: absolute;
+  margin-right: -250px;
 }
 
-
-
 .sidebar-nav {
-   position: absolute;
-   top: 0;
-   width: 250px;
-   margin: 0;
-   padding: 0;
-   list-style: none;
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .sidebar-nav li {
-   text-indent: 20px;
-   line-height: 40px;
+  text-indent: 20px;
+  line-height: 40px;
 }
 
 .sidebar-nav li a {
-   display: block;
-   text-decoration: none;
-   color: #999999 ;
+  display: block;
+  text-decoration: none;
+  color: #999999;
 }
 
 .sidebar-nav li a:hover {
-   text-decoration: none;
-   color: #fff;
-   background: rgba(255,255,255,0.2);
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255,255,255,0.2);
 }
 
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .sidebar-nav > .sidebar-brand {
-   height: 65px;
-   font-size: 18px;
-   line-height: 60px;
+  height: 65px;
+  font-size: 18px;
+  line-height: 60px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-   color: #999999 ;
+  color: #999999;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-   color: #fff;
-   background: none;
+  color: #fff;
+  background: none;
 }
-
 @media(min-width:768px) {
-   #wrapper {
-       padding-left: 0;
-   }
+  #wrapper {
+    padding-left: 0;
+  }
 
-   #wrapper.toggled {
-       padding-left: 250px;
-   }
+  #wrapper.toggled {
+    padding-left: 250px;
+  }
 
-   #sidebar-wrapper {
-       width: 0;
-   }
+  #sidebar-wrapper {
+    width: 0;
+  }
 
-   #wrapper.toggled #sidebar-wrapper {
-       width: 250px;
-   }
+  #wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+  }
 
-   #page-content-wrapper {
-       padding: 20px;
-       position: relative;
-   }
+  #page-content-wrapper {
+    padding: 20px;
+    position: relative;
+  }
 
-   #wrapper.toggled #page-content-wrapper {
-       position: relative;
-       margin-right: 0;
-   }
+  #wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+  }
 }
-.footer{
 
 .footer {
   background-color: black;
   padding: 40px;
   margin-top: 40px;
 }
+
+.login {
+  padding-bottom: 400px;
+
+  button {
+    margin-left: 520px;
+  }
+
+  .this {
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+    width: 250px;
+  }
+}
+
+.content {
+  font-size: 30px;
+}
+
+.row {
+  font-size: 20px;
+
+  .five {
+    padding-bottom: 40px;
+  }
+
+  .six {
+    margin-left: 350px;
+  }
+}
+
+.trick {
+  .title {
+    text-decoration: underline;
+    text-decoration-color: grey;
+  }
+
+  h4 {
+    font-family: 'Bellefair', serif;
+  }
+
+  h2 {
+    font-family: 'Cherry Cream Soda', cursive;
+  }
+
+  td {
+    font-family: 'Forum', cursive;
+  }
+}
+
+textarea {
+  padding: 70px;
+}
+
+.contact {
+  background-image: url('https://images.pexels.com/photos/220197/pexels-photo-220197.jpeg?h=350&auto=compress&cs=tinysrgb');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: white;
+}
+
+.detail {
+  blockquote {
+    padding: 30px;
+    font-size: 25px;
+    border-radius: 5px;
+    border-style: outset;
+  }
+
+  .two {
+    font-family: 'Zilla Slab', serif;
+  }
+
+  .three {
+    h5 {
+      font-family: 'Kalam', cursive;
+      color: grey;
+    }
+  }
+
+  .four {
+    font-family: 'Playball', cursive;
+
+    #price {
+      color: #CD0416;
+      border-style: outset;
+      border-color: #CD0416;
+      border-radius: 1px;
+    }
+  }
 }
