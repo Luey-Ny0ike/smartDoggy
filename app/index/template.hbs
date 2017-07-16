@@ -39,10 +39,10 @@
   </script>
 {{outlet}}
 
-
+    <h1>Dogs</h1>
 <ul>
   <div class="row">
-{{#each model as |dog|}}
+{{#each model.dogs as |dog|}}
   {{dog-tile dog=dog}}
   {{/each}}
 </div>
