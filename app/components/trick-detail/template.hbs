@@ -1,9 +1,56 @@
-<h1>{{trick.title}}</h1> <br> <p><img class="materialboxed" src={{trick.image1}}></p>
-   steps: {{trick.content1}} <br>{{trick.content2}}
-   <p><img class="materialboxed" src={{trick.image2}}></p>
-
+<div class="row trick">
+<h2>{{trick.title}}</h2>
+  <div class="col-md-6">
+ <br> <p><img class="thumbnail" src={{trick.image1}}></p>
+  </div>
+  <div class="col-md-6 two">
+    <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Follow this steps</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="/assets/images/one.png" alt="1">&nbsp;{{trick.step1}}</td>
+      </tr>
+      <tr>
+        <td><img src="/assets/images/two.png" alt="2">&nbsp;{{trick.step2}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  <div class="col-md-6 three">
+   <p><img class="thumbnail" src={{trick.image2}}></p>
+ </div>
+  <div class="col-md-6 four">
+    <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>Follow this steps</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="/assets/images/three.png" alt="3">&nbsp;{{trick.step3}}</td>
+      </tr>
+      <tr>
+        <td><img src="/assets/images/four.png" alt="4">&nbsp;{{trick.step4}}</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  </div>
+  <div class ="row">
+  <div class="col-md-12 five">
+    extra tips: {{trick.extratips}}
+  </div>
+  <div class="col-md-12 six">
    <iframe width="620" height="515" src= {{trick.video}}>
 </iframe>
+</div>
+</div>
+
 
 <button class="btn btn-danger"{{action 'delete' trick}}>Delete</button>
 
