@@ -13,4 +13,5 @@ export default DS.Model.extend({
   gender: DS.attr(),
   color: DS.attr(),
   recomendation: DS.attr(),
+  price: DS.attr(),
 });
