@@ -1,10 +1,51 @@
-<h4>Name: {{puppy.name}}</h4>
-<h4>Age: {{puppy.age}} &nbsp; &nbsp; Breed: {{puppy.breed}}</h4>
-<h4>&nbsp;&nbsp; Title: {{puppy.title}}</h4>
-<h5>Description:</h5>
-  <p>{{puppy.description}}</p>
+{{yield}}
+<div class="detail">
+  <div class="row">
+    <div class="col-md-6 one">
+      <br>
+      <p><img class="thumbnail" src= {{puppy.image1}}></p>
+    </div>
+    <div class="col-md-6 two">
+      <h4>Name:{{puppy.name}}</h4>
+      <br>
+      <h4>Age: {{puppy.age}}</h4>
+      <br>
+      <h4>Gender: {{puppy.gender}}</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 three">
+      <h4>Title:</h4>
+      <h5>{{puppy.title}}</h5>
+      <br>
+      <h4>Description:</h4>
+      <h5>{{puppy.description}}</h5>
+    </div>
+    <div class="col-md-6 four">
+      <p><img class="thumbnail" src= {{puppy.image2}}></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6 three">
+      <p><img class="thumbnail" src= {{puppy.image3}}></p>
+    </div>
+    <div class="col-md-6 four">
+      <h4>Breed: {{puppy.breed}}</h4>
+      <br>
+      <h4>Colour: {{puppy.color}}</h4>
+      <br>
+      <h4>Price: <span id="price">{{puppy.price}}</span></h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <blockquote cite="http://">
+        Recomendation: {{puppy.recomendation}}
+      </blockquote>
+    </div>
+  </div>
+</div>
 
-  <p>Recommendation: <em>this and that</em></p>
 
 <button class="btn btn-danger"{{action 'delete' puppy}}>Delete</button>
 
