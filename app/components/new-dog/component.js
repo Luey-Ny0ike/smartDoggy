@@ -22,6 +22,7 @@ export default Ember.Component.extend({
         nickname: this.get('nickname'),
         description: this.get('description'),
         gender: this.get('gender'),
+        price:this.get('price'),
         recomendation: this.get('recomendation')
       };
       this.set('addNewDog', false);
