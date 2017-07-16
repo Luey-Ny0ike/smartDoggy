@@ -47,3 +47,11 @@
   {{/each}}
 </div>
 </ul>
+<h1>Available puppies</h1>
+<ul>
+  <div class="row">
+  {{#each model.puppies as |puppy|}}
+    {{puppy-tile puppy=puppy}}
+  {{/each}}
+</div>
+</ul>
