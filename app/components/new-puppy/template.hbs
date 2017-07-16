@@ -1,5 +1,6 @@
 {{#if addNewPuppy}}
 <h1>New puppy</h1>
+<div class="row">
 <div class="col-md-4">
   <form>
     <div class="form-group">
@@ -57,6 +58,7 @@
     <button class="btn btn-success" {{action 'savePuppy1' dog}}>Save</button>
     <button class="btn btn-primary" {{action 'puppyFormHide'}}>Hide</button>
   </form>
+</div>
 </div>
 {{else}}
   <button class="btn btn-success"{{action 'puppyFormShow'}}>New Puppy</button>
