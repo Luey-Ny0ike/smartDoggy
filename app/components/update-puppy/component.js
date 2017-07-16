@@ -22,6 +22,7 @@ export default Ember.Component.extend({
         nickname:  this.get('nickname'),
         title: this.get('title'),
         recomendation: this.get('recomendation'),
+        price: this.get('price'),
         description: this.get('description'),
       };
       this.set('updatePuppyForm', false);
