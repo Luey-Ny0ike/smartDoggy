@@ -1,6 +1,7 @@
 {{yield}}
-<h2>Login as admin</h2>
-<div class="col-md-4">
+<div class="row login">
+<h2 class="this">Login as admin</h2>
+<!-- <div class="col-md-4"> -->
   <form>
     <div class="form-group">
       <label for="email">Email</label> {{input value=email id="email" class="form-control"}}
@@ -11,4 +12,5 @@
     </div>
    </form>
   <button name="button" class="btn" {{action 'logIn'}}>Login</button>
+<!-- </div> -->
 </div>
