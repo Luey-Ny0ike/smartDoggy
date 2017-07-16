@@ -1,0 +1,16 @@
+<div class="col-md-4 content">
+<li>
+<p><img class="materialboxed" src={{puppy.image1}} class="img-thumbnail" alt={{puppy.name}}></p>
+  <div class="content">
+Name: {{puppy.name}} <br>Colour: {{puppy.color}} <br> Age: {{puppy.age}} <br>
+{{#link-to 'puppy'  puppy.id class= "btn btn-primary"}} See more{{/link-to}}
+</div>
+</li>
+</div>
+
+<!-- jquery for the materialboxed functionality -->
+<script type="text/javascript">
+$(document).ready(function(){
+   $('.materialboxed').materialbox();
+ });
+</script>
