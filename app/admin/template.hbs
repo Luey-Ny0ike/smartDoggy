@@ -4,18 +4,22 @@
   <button name="button" class="btn"{{action 'logout'}}>Logout</button>
   <h1>Available dogs</h1>
   <ul>
+    <div class="row">
     {{#each model.dogs as |dog|}}
       {{admin-tile dog=dog update="update" destroyDog="destroyDog"}}
     {{/each}}
+  </div>
   </ul>
 
   {{new-dog saveDog2="saveDog3"}}
 
   <h1>Available puppies</h1>
   <ul>
+    <div class="row">
     {{#each model.puppies as |puppy|}}
-      <li>{{admin-puppy-tile puppy=puppy destroyPuppy="destroyPuppy"}}</li>
+    {{admin-puppy-tile puppy=puppy destroyPuppy="destroyPuppy"}}
     {{/each}}
+    </div>
   </ul>
 
   {{new-puppy update="update" savePuppy2="savePuppy3"}}
@@ -28,25 +32,7 @@
 
 {{new-trick saveTrick2="saveTrick3"}}
 
-<a class="waves-effect waves-light btn" href="#modal1">Modal</a>
 
- <!-- Modal Structure -->
- <div id="modal1" class="modal">
-   <div class="modal-content">
-     <h4>Modal Header</h4>
-     <p>A bunch of text</p>
-   </div>
-   <div class="modal-footer">
-     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-   </div>
- </div>
-
- <script type="text/javascript">
- $(document).ready(function(){
-// the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-$('.modal').modal();
-});
- </script>
 {{else}}
   {{login-form logIn='logIn'}}
   {{/if}}
