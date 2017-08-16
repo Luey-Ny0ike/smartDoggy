@@ -1,7 +1,7 @@
 <div class="col-md-6 content">
 <li>
   Name: {{dog.name}} <br>Colour: {{dog.color}} <br> Age: {{dog.age}} <br>
-  <p><img src={{dog.image1}} alt={{dog.name}}></p>
+  <p><img src={{dog.image1}} alt={{dog.name}} class="img-thumbnail"></p>
 
   {{#link-to 'admin1'  dog.id class= "btn btn-primary"}} See more{{/link-to}}
 </li>
